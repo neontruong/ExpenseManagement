@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background_color"> <!-- Thay bằng màu nền phù hợp -->
+
+    <!-- Page Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="Welcome to Expense Management"
+        android:textColor="@color/textPrimary"
+    android:textSize="24sp"
+    android:textStyle="bold" />
+
+    <!-- Image -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/anhh2"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <!-- Username Input -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/edit_text_bg"
+        android:padding="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_user"
+            android:contentDescription="User Icon"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="8dp"
+            app:tint="@color/icon_tint_color" /> <!-- Màu tôn nền của biểu tượng -->
+
+        <EditText
+            android:id="@+id/editUsername"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Username"
+            android:background="@android:color/transparent"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/edit_text_color"
+            android:textColorHint="@color/edit_text_hint_color"
+            android:padding="4dp" />
+    </LinearLayout>
+
+    <!-- Password Input -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/edit_text_bg"
+        android:padding="8dp"
+        android:layout_marginBottom="24dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_lock"
+            android:contentDescription="Password Icon"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="8dp"
+            app:tint="@color/icon_tint_color" />
+
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:background="@android:color/transparent"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/edit_text_color"
+            android:textColorHint="@color/edit_text_hint_color"
+            android:padding="4dp" />
+    </LinearLayout>
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="@color/login_button_color"
+        android:drawableStart="@drawable/ic_login"
+        android:drawablePadding="8dp"
+        android:padding="12dp"
+        android:elevation="4dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="sans-serif-medium" />
+
+    <!-- Register Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="@color/register_button_text_color"
+        android:backgroundTint="@color/register_button_background"
+        android:layout_marginTop="20dp"
+        android:elevation="4dp" />
+
+    <!-- Forgot Password -->
+    <TextView
+        android:id="@+id/tv_forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:textColor="@color/forgot_password_text_color"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="sans-serif-medium" />
+</LinearLayout>

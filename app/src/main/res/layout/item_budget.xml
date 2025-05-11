@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:backgroundTint="@color/background_color">
+
+    <TextView
+        android:id="@+id/textViewCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_text_color"
+        android:contentDescription="Category label" />
+
+    <TextView
+        android:id="@+id/textViewMaxBudget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Max Budget"
+        android:textColor="@color/secondary_text_color"
+        android:contentDescription="Maximum budget label" />
+
+    <TextView
+        android:id="@+id/textViewStartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Date"
+        android:textColor="@color/secondary_text_color"
+        android:contentDescription="Start date label" />
+
+    <TextView
+        android:id="@+id/textViewEndDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End Date"
+        android:textColor="@color/secondary_text_color"
+        android:contentDescription="End date label" />
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/background_color"> <!-- Background color -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_gravity="center">
+
+        <!-- Search Bar -->
+        <EditText
+            android:id="@+id/searchExpenseEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/colorSecondary"
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:hint="Search for spending"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textColor="@color/budget_button_color"
+        android:textColorHint="@color/edit_text_color"
+        android:contentDescription="Search bar for searching expenses" />
+
+        <!-- Dashboard Title -->
+        <TextView
+            android:id="@+id/tvTitleMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:textAlignment="center"
+            android:textColor="@color/primary_text_color"
+            android:textSize="36sp"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="Total spending title" />
+
+        <!-- Horizontal Layout for Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_marginBottom="16dp">
+
+            <!-- Add Expense Button -->
+            <Button
+                android:backgroundTint="@color/add_expense_button_color"
+            android:id="@+id/buttonAddExpense"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_add"
+            android:padding="12dp"
+            android:text="Add Expense"
+            android:textColor="@color/button_text_color"
+            android:contentDescription="Button to add a new expense" />
+
+            <!-- Overview Button -->
+            <Button
+                android:backgroundTint="@color/overview_button_color"
+            android:id="@+id/buttonOverview"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_overview"
+            android:padding="12dp"
+            android:text="Overview"
+            android:textColor="@color/button_text_color"
+            android:contentDescription="Button to view expense overview" />
+
+            <!-- Budget Button -->
+            <Button
+                android:backgroundTint="@color/budget_button_color"
+            android:id="@+id/buttonBudget"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_budget"
+            android:padding="12dp"
+            android:text="Budget"
+            android:textColor="@color/button_text_color"
+            android:contentDescription="Button to view budget" />
+
+            <!-- Recurring Button -->
+            <Button
+                android:backgroundTint="@color/recurring_button_color"
+            android:id="@+id/buttonRecurring"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_recurring"
+            android:padding="12dp"
+            android:text="Recurring"
+            android:textColor="@color/button_text_color"
+            android:contentDescription="Button to view recurring expenses" />
+        </LinearLayout>
+
+        <!-- Expense List -->
+        <ListView
+            android:id="@+id/listViewExpenses"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp"
+            android:backgroundTint="@color/list_background_color"
+        android:contentDescription="List of expenses" />
+
+        <!-- Logout Button -->
+        <Button
+            android:backgroundTint="@color/edit_text_color"
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textColor="@color/logout_button_text_color"
+        android:padding="12dp"
+        android:elevation="4dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-medium"
+        android:contentDescription="Button to log out of the app" /> <!-- Added content description -->
+    </LinearLayout>
+</FrameLayout>

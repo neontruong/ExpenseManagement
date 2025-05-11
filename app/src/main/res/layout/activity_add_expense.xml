@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@color/background_color"> <!-- Add background color -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/background_color"
+        android:padding="16dp"
+        android:layout_gravity="center"> <!-- Center the content -->
+
+        <!-- Date Input with Icon -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/edit_text_bg"
+            android:padding="8dp"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_calendar"
+                android:contentDescription="Date Icon"
+                android:layout_gravity="center_vertical"
+                android:tint="@color/icon_tint_color"
+                android:layout_marginEnd="8dp" />
+
+            <EditText
+                android:id="@+id/editTextDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Date (YYYY-MM-DD)"
+                android:inputType="date"
+                android:background="@android:color/transparent"
+                android:textColor="@color/edit_text_color"
+                android:textColorHint="@color/edit_text_hint_color"
+                android:padding="4dp" />
+        </LinearLayout>
+
+        <!-- Amount Input with Icon -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/edit_text_bg"
+            android:padding="8dp"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_money"
+                android:contentDescription="Amount Icon"
+                android:layout_gravity="center_vertical"
+                android:tint="@color/icon_tint_color"
+                android:layout_marginEnd="8dp" />
+
+            <EditText
+                android:id="@+id/editTextAmount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Amount"
+                android:inputType="numberDecimal"
+                android:background="@android:color/transparent"
+                android:textColor="@color/edit_text_color"
+                android:textColorHint="@color/edit_text_hint_color"
+                android:padding="4dp" />
+        </LinearLayout>
+
+        <!-- Description Input with Icon -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/edit_text_bg"
+            android:padding="8dp"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_description"
+                android:contentDescription="Description Icon"
+                android:layout_gravity="center_vertical"
+                android:tint="@color/icon_tint_color"
+                android:layout_marginEnd="8dp" />
+
+            <EditText
+                android:id="@+id/editTextDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Description"
+                android:background="@android:color/transparent"
+                android:textColor="@color/edit_text_color"
+                android:textColorHint="@color/edit_text_hint_color"
+                android:padding="4dp" />
+        </LinearLayout>
+
+        <!-- Category Spinner -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/edit_text_bg"
+            android:padding="8dp"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_category"
+                android:contentDescription="Category Icon"
+                android:layout_gravity="center_vertical"
+                android:tint="@color/icon_tint_color"
+                android:layout_marginEnd="8dp" />
+
+            <Spinner
+                android:id="@+id/spinnerCategory"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <!-- Save Expense Button -->
+        <Button
+            android:id="@+id/buttonSaveExpense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Expense"
+            android:backgroundTint="@color/save_button_color"
+            android:textColor="#FFFFFF"
+            android:elevation="4dp"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="sans-serif-medium"
+            android:drawablePadding="8dp" />
+
+        <!-- Back Button -->
+        <Button
+            android:id="@+id/buttonGoback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:backgroundTint="@color/back_button_color"
+            android:textColor="#FFFFFF"
+            android:elevation="4dp"
+            android:fontFamily="sans-serif-medium"
+            android:drawablePadding="8dp" />
+    </LinearLayout>
+</FrameLayout>

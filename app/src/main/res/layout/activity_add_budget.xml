@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@color/background_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="364dp"
+        android:layout_gravity="center"
+        android:background="@drawable/edit_text_bg"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Add New Budget"
+            android:textColor="@color/primary_text_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@android:color/transparent"
+            android:hint="Category"
+            android:inputType="text"
+            android:textColor="@color/edit_text_color"
+            android:textColorHint="@color/edit_text_hint_color" />
+
+        <EditText
+            android:id="@+id/editTextMaxBudget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@android:color/transparent"
+            android:hint="Maximum Budget"
+            android:inputType="number"
+            android:textColor="@color/edit_text_color"
+            android:textColorHint="@color/edit_text_hint_color" />
+
+        <EditText
+            android:id="@+id/editTextStartDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@android:color/transparent"
+            android:focusable="false"
+            android:hint="Start Date (YYYY-MM-DD)"
+            android:textColor="@color/edit_text_color"
+            android:textColorHint="@color/edit_text_hint_color" />
+
+        <EditText
+            android:id="@+id/editTextEndDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@android:color/transparent"
+            android:focusable="false"
+            android:hint="End Date (YYYY-MM-DD)"
+            android:textColor="@color/edit_text_color"
+            android:textColorHint="@color/edit_text_hint_color" />
+
+        <Button
+            android:id="@+id/buttonAddBudget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="@color/add_button_color"
+            android:elevation="4dp"
+            android:text="Add Budget"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/buttonViewBudget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/view_button_color"
+            android:elevation="4dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="View Budget"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</FrameLayout>

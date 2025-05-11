@@ -1,0 +1,44 @@
+<selector xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Trạng thái khi bấm vào -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="12dp" />
+            <gradient
+                android:startColor="#E91E63"
+                android:endColor="#BA68C8"
+                android:angle="90" />
+            <stroke
+                android:width="2dp"
+                android:color="#E91E63" />
+            <solid android:color="#7B1FA2" />
+        </shape>
+    </item>
+    <!-- Trạng thái bình thường -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="12dp" />
+            <gradient
+                android:startColor="#2196F3"
+                android:endColor="#D1C4E9"
+                android:angle="90" />
+            <stroke
+                android:width="2dp"
+                android:color="#FFEB3B" />
+        </shape>
+    </item>
+    <ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="#E1BEE7" tools:ignore="StateListReachable">
+        <item>
+            <shape android:shape="rectangle">
+                <corners android:radius="12dp" />
+                <gradient
+                    android:startColor="#FFC107"
+                    android:endColor="#D1C4E9"
+                    android:angle="90" />
+                <stroke
+                    android:width="2dp"
+                    android:color="#7B1FA2" />
+            </shape>
+        </item>
+    </ripple>
+
+</selector>

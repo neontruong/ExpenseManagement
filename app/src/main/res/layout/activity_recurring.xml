@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/recuuring_activity"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editStaartDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Start Date (yyyy-MM-dd)" />
+
+    <EditText
+        android:id="@+id/editEndDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="End Date (yyyy-MM-dd)" />
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description" />
+
+    <EditText
+        android:id="@+id/etAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Amount"
+        android:inputType="numberDecimal" />
+    <Button
+        android:id="@+id/btnAddRecurringExpense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Recurring Expense"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="@color/login_button_color"
+        android:drawablePadding="8dp"
+        android:padding="12dp"
+        android:elevation="4dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="sans-serif-medium" />
+    <TextView
+        android:id="@+id/tvRecurringHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recurring Expenses"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <ListView
+        android:id="@+id/listRecurringExpenses"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+</LinearLayout>
